@@ -46,6 +46,7 @@ section #servicos{
 	overflow-y: hidden;
 	margin-top: 20px;
 	font-family: "Segoe UI", "Calibri", "Arial", sans-serif;
+	text-align: left;
 
 }
 
@@ -387,7 +388,7 @@ h1 {
 h2 {
 	letter-spacing: 0.005em;
 	font-size: 2.5em;
-	font-weight: 400;
+	font-weight: 500;
 	font-family: "Aptos", "Segoe UI", Arial, sans-serif;
 		
 }
@@ -395,7 +396,7 @@ h2 {
 h3 {
 	letter-spacing: 0.005em;
 	font-size: 2em;
-	font-weight: 300;
+	font-weight: 400;
 	font-family: "Aptos", "Segoe UI", Arial, sans-serif;
 	
 }
@@ -505,6 +506,9 @@ p {
     .countdown-label {
         font-size: 0.8rem;
     }
+
+    #recursos h2 {
+		font-size: 2.6em
         
     
 }
@@ -517,6 +521,9 @@ p {
 	h1 {
 		font-size: 4em;
 	}
+
+	#recursos h2 {
+		font-size: 3.5em
 
 
 }
