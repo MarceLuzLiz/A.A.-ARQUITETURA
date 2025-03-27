@@ -454,6 +454,10 @@ p {
         font-size: 0.8rem;
     }
 
+    #recursos h2 {
+		font-size: 2em
+	}
+
    
 }
 
@@ -508,7 +512,8 @@ p {
     }
 
     #recursos h2 {
-		font-size: 2.6em
+		font-size: 2.5em
+	}
         
     
 }
@@ -521,9 +526,6 @@ p {
 	h1 {
 		font-size: 4em;
 	}
-
-	#recursos h2 {
-		font-size: 3.5em
 
 
 }
