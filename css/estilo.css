@@ -22,7 +22,7 @@ body {
 
 body::after {
     content: "";
-    background: url(../IMAGENS/AA2.png) no-repeat center center;
+    background: url(../IMAGENS/AA1.png) no-repeat center center;
     background-size: cover;
     position: fixed;
     top: 0;
@@ -267,10 +267,9 @@ nav.navbar-transparente {
 }
 
 #servicos {
-	background-color: rgba(255, 255, 255, .3);
-	padding: 2%;
-	padding-top: 20PX;
-	padding-bottom: 20PX;
+	background-color: rgba(255, 255, 255, .75);
+	padding: 5%;
+	
 	
 }
 
