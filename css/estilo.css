@@ -26,7 +26,7 @@ html, body {
     animation: fadeIn 2s ease-in-out;
     position: relative; /* Add this */
     min-height: 100vh; /* Use viewport height instead of 100% */
-    background:background: url(../IMAGENS/bk3.jpg); /* Fallback background color */
+    background:background: url(../IMAGENS/TC.jpg); /* Fallback background color */
     height: 100%;
 }
 
