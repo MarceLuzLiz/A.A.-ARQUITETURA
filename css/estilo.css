@@ -9,11 +9,39 @@ html, body, #home {
 
 
 body {
-	background: url(../IMAGENS/bk3.png);
-    background-size: cover;
-    font-family:"Aptos", "Segoe UI", Arial, sans-serif;
-    animation: fadeIn 2s ease-in-out;
+	background: url(../IMAGENS/TC.PNG);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-size: ;
 }
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+#home {
+    font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+    animation: fadeIn 2s ease-in-out;
+    position: relative; /* Add this */
+    min-height: 100vh; /* Use viewport height instead of 100% */
+    background:background: url(../IMAGENS/bk3.jpg); /* Fallback background color */
+    height: 100%;
+}
+
+#home::after {
+    content: "";
+    background: url(../IMAGENS/TC3.png) no-repeat center center;
+    background-size: cover;
+    position: absolute; /* Changed from fixed to absolute */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    animation: fadeInBackground 3s ease-in-out forwards;
+    opacity: 1;
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -22,7 +50,7 @@ body {
 
 body::after {
     content: "";
-    background: url(../IMAGENS/AA1.png) no-repeat center center;
+    background: url(../IMAGENS/TC3.png) no-repeat center center;
     background-size: cover;
     position: fixed;
     top: 0;
@@ -72,7 +100,7 @@ section #recursos{
 /* Barra Nav
 ----------------------*/
 nav.navbar-transparente {
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(0, 0, 0, 0.3);
 	padding: 20px 0px;
 }
 
@@ -88,14 +116,14 @@ nav.navbar-transparente {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	color: midnightblue;
+	color: grey;
 }
 
 
 
 .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, .6);
-    border-color: midnightblue;
+    border-color: grey;
 }
 
 .divisor {
@@ -104,80 +132,6 @@ nav.navbar-transparente {
 	margin: 12px 15px;
 }
 
-/* home contagem*/
-
-.countdown-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-    padding: 20px;
-    
-}
-
-.countdown-container {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
-
-.countdown-box {
-    margin: 0 10px;
-    padding: 20px;
-    background-color: #343a40;
-    color: white;
-    border-radius: 8px;
-    min-width: 90px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.countdown-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #343a40;
-    font-weight: 700;
-}
-
-.countdown-number {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.countdown-label {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.novidade-container {
-    text-align: center;
-    animation: fadeIn 1s ease-in;
-}
-
-
-.novidade-image {
-	max-width: 100%;
-    height: auto;
-    margin: 20	px auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-    
-}
-
-.novidade-image:hover {
-    transform: scale(1.05);
-}
-
-.novidade-title {
-	text-align: center;
-    font-size: 3rem;
-    color: #28a745;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
 
 .hidden {
     display: none;
@@ -196,63 +150,28 @@ nav.navbar-transparente {
 	text-align: center;
 }
 
-.btn-custom {
-	color: white;
-	border-radius: 500px;
-	-webkit-border-radius: 500px;
-	-moz-border-radius: 500px;
-	text-transform: capitalize;
-	transition: background 0.4s, color 0.4s;
-	padding: 10px 15px;
-}
-
-.btn-roxo {
-	background: black;
-	border: 2px solid black;
-}
-
-.btn-roxo:hover {
-	background: #374151;
-	color: white;
-}
-
-.btn-branco {
-	border: 2px solid #374151;
-	color: black;
-}
-
-.btn-branco:hover {
-	background: black;
-	color: white;
-}
-
-.btn-contador {
-	background: white;
-	color: black;
-	width: 200px;
-	position: center;
-	border: 2px solid #374151;
-
 
 }
 
 .carousel-control-next, .carousel-control-prev {
 	width: 5%;
-	color: black;
-	margin: 0PX;
+	margin: 0px;
 	
 }
 
+.carousel-inner {
+	padding: 0 50px;
+}
 
 
 
 .carousel-inner img {
     max-width: 80%;
     height: auto;
-    margin: 20px auto;
+    margin: 30px auto;
     display: block;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(,0,0,0.2);
+    box-shadow: 0 0 20px 10px rgba(255,255,255,0.1);
     transition: transform 0.3s ease;
 }
 
@@ -267,7 +186,7 @@ nav.navbar-transparente {
 }
 
 #servicos {
-	background-color: rgba(255, 255, 255, .75);
+	background-color: rgba( 0, 0, 0, .4);
 	padding: 5%;
 	
 	
@@ -300,7 +219,7 @@ nav.navbar-transparente {
 
 .albuns img {
 	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	box-shadow: 0 0 4px 4px rgba(0,0,0,0.3);
 }
 
 .rotacionar {
@@ -312,7 +231,7 @@ nav.navbar-transparente {
 /* Rodapé
 ---------------*/
 footer {
-	background-color: rgba(255, 255, 255, .3);
+	background-color: rgba(0, 0, 0, .4);
 	padding: 60px 0 20px 0;
 	position: relative;
 }
@@ -342,7 +261,7 @@ footer .navbar-nav a {
 }
 
 footer .navbar-nav a:hover {
-	color: midnightblue;	
+	color: grey;	
 	text-decoration: none;
 
 }
@@ -357,7 +276,7 @@ footer .nav-item .nav-link:visited {
 }
 
 footer .nav-item .nav-link:hover {
-	color: midnightblue;
+	color: grey;
 }
 
 footer ul {
@@ -431,28 +350,7 @@ p {
 		margin: 15px 18px 0 0;
 	}
 
-	.countdown-container {
-        flex-wrap: wrap;
-    }
-    
-    .countdown-box {
-        margin: 2px;
-        padding: 5px;
-        min-width: 50px;
-    }
-    
-    .countdown-title, .novidade-title {
-        font-size: 2rem;
-    }
-    
-    .countdown-number {
-        font-size: 1rem;
-    }
-    
-    .countdown-label {
-        font-size: 0.8rem;
-    }
-
+	
     h2 {
 		font-size: 2em
 	}
@@ -496,27 +394,7 @@ p {
 		padding:5px 35px;
 	}
 
-	.countdown-container {
-        flex-wrap: wrap;
-    }
-    
-    .countdown-box {
-        margin: 5px;
-        padding: 15px;
-        min-width: 70px;
-    }
-    
-    .countdown-title, .novidade-title {
-        font-size: 2rem;
-    }
-    
-    .countdown-number {
-        font-size: 1.8rem;
-    }
-    
-    .countdown-label {
-        font-size: 0.8rem;
-    }
+	
 
     h2 {
 		font-size: 2.5em
