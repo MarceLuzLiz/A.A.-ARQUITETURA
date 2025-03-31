@@ -104,7 +104,7 @@ section #servicos{
 }
 
 #servicos a{
-	color: lightgrey;
+	color: white;
 
 
 
@@ -117,7 +117,7 @@ section #servicos{
 }
 
 #servicos a:hover{
-	color: whitesmoke;
+	color: lightgrey;
 
 
 }
