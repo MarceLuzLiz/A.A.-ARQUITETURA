@@ -75,26 +75,29 @@ body::after {
 }
 section #servicos{
 	overflow-y: hidden;
-	margin-top: 20px;
+	margin-top: 10px;
 	font-family: "Segoe UI", "Calibri", "Arial", sans-serif;
 	text-align: left;
 
 }
 
 #recursos p {
-	text-align: justify;	
+	 text-align: justify; /* Justifica o texto */
+     text-indent: 2em;    /* Recuo na primeira linha (2em = ~2 letras "M") */
+     margin-bottom: 1em;   /* Espaço entre parágrafos (opcional) */	
+     padding-top: 10px;
 
 }
 
 #recursos h2 {
 	text-align: center;	
-	padding-bottom: 10px;
+	padding-bottom: 7px;
 
 }
 
 
 #servicos h2{
-	padding-top: 20px;
+	padding: 20px;
 	font-family: "Segoe UI", "Calibri", "Arial", sans-serif;
 
 
@@ -103,6 +106,11 @@ section #servicos{
 #servicos p{
 	color: antiquewhite;
 	font-family: "Segoe UI", "Calibri", "Arial", sans-serif;
+}
+.titulo {
+	text-align: center;
+	background-color: rgba(0, 0, 0, .3);
+	padding-top: 5px;
 }
 
 
@@ -172,19 +180,35 @@ nav.navbar-transparente {
 	
 }
 
+  /* Estilo para os controles do carousel */
+  #carousel-AA .carousel-control-prev {
+    left: 1px; /* Margem de 2px da borda esquerda */
+  }
+  
+  #carousel-AA .carousel-control-next {
+    right: 1px; /* Margem de 2px da borda direita */
+  }
+  
+  /* Opcional: ajustar o padding se necessário */
+  #carousel-AA .carousel-control-prev,
+  #carousel-AA .carousel-control-next {
+    width: 5%; /* Largura dos controles */
+    padding: 0; /* Remove padding padrão se existir */
+  }
+
 .carousel-inner {
-	padding: 0 50px;
+	padding: 0 50px 50px 50px;
 }
 
 
 
 .carousel-inner img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
-    margin: 30px auto;
+    margin: 10px auto;
     display: block;
     border-radius: 10px;
-    box-shadow: 0 0 20px 10px rgba(255,255,255,0.3);
+    box-shadow:  0 8px 16px rgba(255,255,255,0.1);
     transition: transform 0.3s ease;
 }
 
@@ -199,8 +223,9 @@ nav.navbar-transparente {
 }
 
 #servicos {
-	background-color: rgba( 0, 0, 0, .4);
+	background-color: rgba( 0, 0, 0, .25);
 	padding: 2%;
+
 	
 	
 }
@@ -210,10 +235,10 @@ nav.navbar-transparente {
 
 }
 
-#servicos h1 {
+.titulo h1 {
 	color: whitesmoke;
-	font-size: 4em;
-
+	font-size: 3.2em;
+	margin-bottom: 15px;
 }
 
 #recursos {
@@ -240,10 +265,11 @@ nav.navbar-transparente {
 .albuns img {
 	border-radius: 10px;
 	box-shadow: 0 0 4px 4px rgba(0,0,0,0.25);
+	margin-top: 10px;
 }
 
 .rotacionar {
-		padding-left: 80px;
+		padding-left: 0px;
 }
 
 
@@ -251,7 +277,7 @@ nav.navbar-transparente {
 /* Rodapé
 ---------------*/
 footer {
-	background-color: rgba( 0, 0, 0, .25);
+	background-color: rgba( 0, 0, 0, .35);
 	padding: 60px 0 20px 0;
 	position: relative;
 }
@@ -343,16 +369,15 @@ h3 {
 p {
 	color: whitesmoke;
 	font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+
 }
 
 
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-	.btn-custom {
-		margin: 10px 15px;
-		font-size: 1em;
-	}
+@media (max-width: 575.99px) { 
+
 	h4 {
 		margin: 10px 0px 5px 0;
 		font-size: 1em;
@@ -372,8 +397,12 @@ p {
 	}
 
 	
+    .titulo h1 {
+		font-size: 1.7em
+	}
+
     h2 {
-		font-size: 2em
+		font-size: 1.4em
 	}
 
 	nav ul li {
@@ -385,26 +414,25 @@ p {
 		height:75%	
 	}
 
-   
-}
-
+	p {
+		font-weight: 300;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-	h1 {
-		font-size: 3em;
+
+	p {
+		font-weight: 300;
 	}
-	.btn-custom {
-		margin: 10px 15px;
+
+	.titulo h1 {
+		font-size: 2.5em;
 	}
+
 	h4 {
 		margin: 10px 0px 5px 0;
 		font-size: 3em;
-	}
-
-	button {
-		margin: 0px 15px;
 	}
 
 	nav a img {
@@ -420,24 +448,21 @@ p {
 		padding:5px 35px;
 		text-align: right;
 	}
-
 	
 
     h2 {
-		font-size: 2.5em
+		font-size: 2.5em;
 	}
 
 	#home::after {
-		height: 75%	}
-        
-    
+		height: 75%;
+	}
 }
 
 
-}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.9px) {
 	h1 {
 		font-size: 4em;
 	}
