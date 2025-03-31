@@ -9,8 +9,8 @@ html, body, #home {
 
 
 body {
-	background: url(../IMAGENS/12.png);
-	width: "1280";
+	background: url(../IMAGENS/01.png);
+	width: 100%;
     margin: 0;
     padding: 0;
     background-size: cover; /* cobre toda a área, pode cortar partes da imagem */
@@ -35,7 +35,7 @@ html, body {
 
 #home::after {
     content: "";
-    background: url(../IMAGENS/TC33.png) no-repeat center center;
+    background: url(../IMAGENS/TC01.png) no-repeat center center;
     background-size: cover;
     position: absolute; /* Changed from fixed to absolute */
     top: 0;
@@ -81,10 +81,17 @@ section #servicos{
 
 }
 
-section #recursos{
-				
+#recursos p {
+	text-align: justify;	
 
 }
+
+#recursos h2 {
+	text-align: center;	
+	padding-bottom: 10px;
+
+}
+
 
 #servicos h2{
 	padding-top: 20px;
@@ -104,18 +111,19 @@ section #recursos{
 ----------------------*/
 nav.navbar-transparente {
 	background-color: rgba( 0, 0, 0	, .3);
-	padding: 20px 0px;
+	padding: 10px 0px;
 }
 
 
 
 .navbar-light .navbar-nav .nav-link {
-	color: antiquewhite;
+	color: whitesmoke;
+
 		
 }
 
 .navbar-light .navbar-nav .nav-link:visited {
-	color: antiquewhite;
+	color: whitesmoke;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -125,13 +133,14 @@ nav.navbar-transparente {
 
 
 .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, .25);
     border-color: grey;
+    margin-right: 35px;
 }
 
 .divisor {
 	width: 2px;
-	background: white;
+	background: whitesmoke;
 	margin: 12px 15px;
 }
 
@@ -191,39 +200,46 @@ nav.navbar-transparente {
 
 #servicos {
 	background-color: rgba( 0, 0, 0, .4);
-	padding: 5%;
+	padding: 2%;
 	
 	
 }
 
 #servicos h2, h3 {
-	color: antiquewhite;
+	color: whitesmoke;
+
+}
+
+#servicos h1 {
+	color: whitesmoke;
+	font-size: 4em;
 
 }
 
 #recursos {
-	color: antiquewhite;
+	color: whitesmoke;
 	padding: 13%;
 	
 }
 
 #recursos h2 {
-	color: antiquewhite;
+	color: whitesmoke;
 	
 }
 
 #recursos h3 {
-	color: antiquewhite;
+	color: whitesmoke;
 }
 
 .albuns {
 	padding: 10px 0;
+
 	
 }
 
 .albuns img {
 	border-radius: 10px;
-	box-shadow: 0 0 4px 4px rgba(0,0,0,0.3);
+	box-shadow: 0 0 4px 4px rgba(0,0,0,0.25);
 }
 
 .rotacionar {
@@ -235,31 +251,31 @@ nav.navbar-transparente {
 /* Rodapé
 ---------------*/
 footer {
-	background-color: rgba( 75, 25, 15, .7);
+	background-color: rgba( 0, 0, 0, .25);
 	padding: 60px 0 20px 0;
 	position: relative;
 }
 
 footer h4 {
-	color: antiquewhite;
+	color: whitesmoke;
 	font-size: 0.8em;
 	text-transform: uppercase;
 	
 }
 
 footer h5 {
-	color: antiquewhite;
+	color: whitesmoke;
 	font-size: 0.8em;
 	text-transform: uppercase;
 	}
 
 footer .navbar-nav {
-	color: antiquewhite;
+	color: whitesmoke;
 	font-size: 0.7em;
 }
 
 footer .navbar-nav a {
-	color: antiquewhite;
+	color: whitesmoke;
 	font-size: 1.2em;
 
 }
@@ -271,12 +287,12 @@ footer .navbar-nav a:hover {
 }
 
 footer .nav-item .nav-link {
-	color: antiquewhite;
+	color: whitesmoke;
 		
 }
 
 footer .nav-item .nav-link:visited {
-	color: antiquewhite;
+	color: whitesmoke;
 }
 
 footer .nav-item .nav-link:hover {
@@ -300,17 +316,18 @@ footer ul li {
 /* Tipografia 	
 ---------------*/
 h1 {
-	font-weight: 500;
+	font-size: 4em;
+	font-weight: 70;
 	letter-spacing: 0.05em;
 	margin-bottom: 50px;
-	color: antiquewhite;
+	color: whitesmoke;
 	font-family: "Aptos", "Segoe UI", Arial, sans-serif;
 }
 
 h2 {
 	letter-spacing: 0.005em;
 	font-size: 2.5em;
-	font-weight: 500;
+	font-weight: 60;
 	font-family: "Aptos", "Segoe UI", Arial, sans-serif;
 		
 }
@@ -318,13 +335,13 @@ h2 {
 h3 {
 	letter-spacing: 0.005em;
 	font-size: 2em;
-	font-weight: 400;
+	font-weight: 50;
 	font-family: "Aptos", "Segoe UI", Arial, sans-serif;
 	
 }
 
 p {
-	color: antiquewhite;
+	color: whitesmoke;
 	font-family: "Aptos", "Segoe UI", Arial, sans-serif;
 }
 
@@ -360,7 +377,12 @@ p {
 	}
 
 	nav ul li {
-		padding: 5px 35px;
+		padding: 0px 35px;
+		text-align: right;
+	}
+
+	#home::after {
+		height:75%	
 	}
 
    
@@ -396,6 +418,7 @@ p {
 
 	nav ul li {
 		padding:5px 35px;
+		text-align: right;
 	}
 
 	
@@ -403,6 +426,9 @@ p {
     h2 {
 		font-size: 2.5em
 	}
+
+	#home::after {
+		height: 75%	}
         
     
 }
