@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+
+body {
+    background: url(../IMAGENS/01.png);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* cobre toda a área, pode cortar partes da imagem */
+    background-position: bottom; /* centraliza a imagem */
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    
+}
+header{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 2.5em;
+    letter-spacing: 0.005em;
+    font-weight: 70;
+    margin-bottom: 35px;
+    text-align: center;
+    font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+}
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+    margin: 0 10% 10% 10%;
+}
+.gallery-items{
+    width: 250px;
+    height: 250px;
+    border: 4px solid whitesmoke;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    flex-grow: 0.1;
+    transition: transform .2s linear;
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.gallery-items:hover{
+    transform: scale(1.03);
+}
+
+
+
+span{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-style: italic;
+    padding-top: 5px;
+    font-size: 0.7em;
+}
+
+
+/* Barra Nav
+----------------------*/
+nav.navbar-transparente {
+    background-color: rgba( 0, 0, 0 , .3);
+    padding: 10px 0px;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+
+        
+}
+
+.navbar-light .navbar-nav .nav-link:visited {
+    color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: grey;
+}
+
+
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .25);
+    border-color: grey;
+    margin-right: 35px;
+}
+
+.divisor {
+    width: 2px;
+    background: whitesmoke;
+    margin: 12px 15px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.99px) { 
+
+    h4 {
+        margin: 10px 0px 5px 0;
+        font-size: 1em;
+    }
+
+    button {
+        margin: 0px 15px;
+    }
+
+    nav a img {
+        margin: 0px 15px;
+    }
+
+    footer ul li img{
+        float: left;
+        margin: 15px 18px 0 0;
+    }
+
+    
+    .titulo h1 {
+        font-size: 1.7em
+    }
+
+    h2 {
+        font-size: 1.4em
+    }
+
+    nav ul li {
+        padding: 0px 35px;
+        text-align: right;
+    }
+
+    #home::after {
+        height:75%  
+    }
+
+    p {
+        font-weight: 300;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    p {
+        font-weight: 300;
+    }
+
+    .titulo h1 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        margin: 10px 0px 5px 0;
+        font-size: 3em;
+    }
+
+    nav a img {
+        margin: 0px 15px;
+    }
+    
+    footer ul li img {
+        float: left;
+        margin: 15px 27px 0 0;
+    }
+
+    nav ul li {
+        padding:5px 35px;
+        text-align: right;
+    }
+    
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    #home::after {
+        height: 75%;
+    }
+}
+
+/* Rodapé
+---------------*/
+footer {
+    background-color: rgba( 0, 0, 0, .35);
+    padding: 60px 0 20px 0;
+    position: relative;
+}
+
+footer h4 {
+    color: whitesmoke;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    
+}
+
+footer h5 {
+    color: whitesmoke;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    }
+
+footer .navbar-nav {
+    color: whitesmoke;
+    font-size: 0.7em;
+}
+
+footer .navbar-nav a {
+    color: whitesmoke;
+    font-size: 1.2em;
+
+}
+
+footer .navbar-nav a:hover {
+    color: grey;    
+    text-decoration: none;
+
+}
+
+footer .nav-item .nav-link {
+    color: whitesmoke;
+        
+}
+
+footer .nav-item .nav-link:visited {
+    color: whitesmoke;
+}
+
+footer .nav-item .nav-link:hover {
+    color: grey;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+    margin: 0 2px;
+}
+
+.img-pdg {
+    padding: 0 0 0 5px;
+}
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.9px) {
+    h1 {
+        font-size: 4em;
+    }
+
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {  
+    h1 {
+        font-size: 5em;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {    
+    h1 {
+        font-size: 6em;
+    }
+
+}
+

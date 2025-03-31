@@ -103,6 +103,25 @@ section #servicos{
 
 }
 
+#servicos a{
+	color: lightgrey;
+
+
+
+}
+
+#servicos a:visited{
+	color: black;
+
+
+}
+
+#servicos a:hover{
+	color: whitesmoke;
+
+
+}
+
 #servicos p{
 	color: antiquewhite;
 	font-family: "Segoe UI", "Calibri", "Arial", sans-serif;
@@ -372,6 +391,20 @@ p {
 	font-weight: 400;
 
 }
+
+span{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-style: italic;
+    padding-top: 5px;
+    font-size: 0.7em;
+}
+
+
+
+
 
 
 
