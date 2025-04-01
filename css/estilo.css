@@ -362,7 +362,7 @@ footer ul {
 
 footer ul li {
 	float: left;
-	margin: 0 2px;
+	margin: 0 2px 0 25PX;
 }
 
 footer img:hover {

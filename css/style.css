@@ -212,7 +212,7 @@ footer ul {
 
 footer ul li {
     float: left;
-    margin: 0 2px;
+    margin: 0 2PX 0 25px;
 }
 
 .img-pdg {
